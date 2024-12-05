@@ -1,0 +1,103 @@
+/* Reseta estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce);
+    color: #fff;
+  }
+  
+  .login-container {
+    display: flex;
+    max-width: 900px;
+    width: 90%;
+    background: #ffffff10;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-image img {
+    display: none;
+  }
+  
+  .login-form {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .login-form h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .login-form p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #f0f0f0;
+    font-size: 1rem;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background: #6e45e2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #5a36b0;
+  }
+  
+  .signup-link {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .signup-link a {
+    color: #88d3ce;
+    text-decoration: none;
+  }
+  
+  /* Responsividade */
+  @media (min-width: 768px) {
+    .login-container {
+      flex-direction: row;
+    }
+  
+    .login-image img {
+      display: block;
+      width: 50%;
+      object-fit: cover;
+    }
+  
+    .login-form {
+      flex: 1;
+    }
+  }
+  
